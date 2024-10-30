@@ -1,9 +1,9 @@
-pub struct Person  {
-    name: &str,
+pub struct Person <'a> {
+    name: &'a str,
 }
 
-impl  Person {
-    pub fn new(name: & str) -> Person {
+impl <'a> Person<'a> {
+    pub fn new(name: &'a str) -> Person<'a> {
         Person{name}
     }
 
