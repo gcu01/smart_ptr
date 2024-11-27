@@ -33,4 +33,7 @@ fn main() {
     let book2 = Book::new(&book_title2, author2, 2021);
     book2.display();
 
+    let data = Box::new([0; 1024*1024]).into_boxed_slice();
+    println!("{}", data.len());
+
 }
